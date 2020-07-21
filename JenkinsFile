@@ -4,12 +4,12 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				bat 'cd monappli & mvn install'
+				bat 'mvn install'
 			}
 		 post {
                 success {
 			echo 'I will always say Hello again!'
-                    junit 'monappli/monappli-domaine/target/surefire-reports/*.xml'
+                    junit 'target/surefire-reports/*.xml'
 			
                         }
                  }
