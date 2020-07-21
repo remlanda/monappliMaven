@@ -33,7 +33,10 @@
         <version>2.0.1</version>
       </plugin>
      </reportPlugins>
-	 
+	<properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties> 
     </configuration>
    </plugin>
   </plugins>
