@@ -33,12 +33,17 @@
         <version>2.0.1</version>
       </plugin>
      </reportPlugins>
-	<properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
-  </properties> 
-    </configuration>
-   </plugin>
+	
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>2.3.2</version>
+<configuration>
+	<source>11</source>
+	<target>11</target>
+</configuration>
+</plugin>
+
   </plugins>
 </build>
 </project>
